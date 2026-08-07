@@ -1,4 +1,3 @@
-
 :root {
   --vinho: #6E1E3C;
   --vinho-profundo: #3D1023;
@@ -127,6 +126,16 @@ button {
   transform: translateY(0);
 }
 
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-64px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal-left.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -190,15 +199,34 @@ button {
 
 .logo { 
   display: flex; 
-  flex-direction: column; 
-  line-height: 1.2; 
+  flex-direction: row;
+  align-items: center; 
+  gap: 12px;
 }
+
+.logo__img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.logo__text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
 .logo__marca { 
   font-family: var(--fonte-display); 
-  font-weight: 600; 
-  font-size: 1.15rem; 
-  color: var(--vinho-profundo); 
+  font-weight: 700; 
+  font-size: 1.25rem; 
+  background: linear-gradient(135deg, #C295D8, var(--roxo));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
+
 .logo__sub { 
   font-size: 0.68rem; 
   letter-spacing: 0.08em; 
@@ -448,6 +476,9 @@ button {
   font-size: 0.9rem;
 }
 
+.atuacao__grid .reveal-left:nth-child(3n+2) { transition-delay: 0.12s; }
+.atuacao__grid .reveal-left:nth-child(3n+3) { transition-delay: 0.24s; }
+
 .procedimentos { 
   padding-block: 5.5rem; 
   background: var(--branco); 
@@ -503,6 +534,9 @@ button {
 }
 .procedure-card__tag--prescricao { 
   background: var(--roxo); 
+}
+.procedure-card__tag--tecnologia { 
+  background: var(--roxo-suave); 
 }
 .procedure-card__tag--terapia { 
   background: var(--amarelo); 
@@ -613,8 +647,9 @@ button {
 }
 .locais { 
   padding-block: 5.5rem; 
-  background: var(--lilas-claro); 
+  background: linear-gradient(135deg, var(--lilas-claro) 0%, #EFE1F5 100%);
 }
+
 .locais__grid { 
   display: grid; 
   gap: 1.4rem; 
@@ -622,39 +657,179 @@ button {
 }
 
 .local-card {
-  background: var(--branco);
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px); 
+  border: 1px solid rgba(255, 255, 255, 0.7);
   border-radius: var(--raio);
   padding: 1.8rem;
-  box-shadow: var(--sombra);
+  box-shadow: 0 10px 30px rgba(62, 16, 35, 0.08);
   border-top: 4px solid var(--amarelo);
+  display: flex;
+  flex-direction: column;
 }
-.local-card__nome { 
-  font-size: 1.15rem; 
-  margin-bottom: 0.4rem; 
+
+.local-card__nome {
+  margin-bottom: 0.2rem;
 }
-.local-card__unidade { 
-  color: var(--texto-suave); 
-  font-size: 0.9rem; 
-  margin-bottom: 1.1rem; 
+
+.local-card__unidade {
+  margin-bottom: 1.5rem;
+  color: var(--texto-suave);
+  font-size: 0.95rem;
 }
+
 .local-card__horarios { 
   display: flex; 
   flex-direction: column; 
-  gap: 0.5rem; 
+  gap: 0;
+  margin-bottom: 2rem; 
+  flex-grow: 1; 
+  list-style: none;
+  padding: 0;
 }
+
 .local-card__horarios li {
   display: flex;
   justify-content: space-between;
-  font-size: 0.9rem;
-  font-weight: 600;
-  padding-bottom: 0.5rem;
-  border-bottom: 1px dashed var(--borda);
-}
-.local-card__horarios li span { 
-  color: var(--vinho); 
-  font-weight: 700; 
+  align-items: center;
+  padding-block: 0.6rem;
+  border-bottom: 1px solid rgba(107, 45, 140, 0.1);
+  color: var(--texto);
+  font-size: 0.95rem;
 }
 
+.local-card__horarios li:last-child {
+  border-bottom: none;
+}
+
+.local-card__horarios li span {
+  font-weight: 700;
+  color: var(--roxo); 
+}
+
+.local-card__acoes {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: auto;
+}
+
+.btn-circular {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform var(--transicao), background var(--transicao), box-shadow var(--transicao);
+  flex-shrink: 0;
+  color: var(--branco);
+}
+
+.btn-circular svg {
+  width: 22px;
+  height: 22px;
+}
+
+.btn-circular--wpp {
+  background-color: #25D366;
+  box-shadow: 0 8px 16px -4px rgba(37, 211, 102, 0.4);
+}
+
+.btn-circular--wpp:hover,
+.btn-circular--wpp:focus-visible {
+  transform: translateY(-4px) scale(1.05);
+  background-color: #1DA851;
+}
+
+.btn-circular--maps {
+  background: linear-gradient(135deg, var(--lilas), var(--roxo-suave));
+  color: var(--vinho-profundo);
+  box-shadow: 0 8px 16px -4px rgba(155, 107, 184, 0.4);
+}
+
+.btn-circular--maps:hover,
+.btn-circular--maps:focus-visible {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 10px 20px -4px rgba(155, 107, 184, 0.6);
+}
+
+.convenios-destaque {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.convenios-destaque__texto {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--roxo);
+  margin-bottom: 0.8rem;
+}
+
+.planos-carrossel {
+  width: 100%;
+  max-width: 800px;
+  overflow: hidden;
+  padding: 1.5rem 0;
+  background-color: var(--branco);
+  border: 1.5px solid var(--borda);
+  border-radius: var(--raio);
+  box-shadow: 0 10px 25px -10px rgba(61, 16, 35, 0.1);
+  position: relative;
+  white-space: nowrap;
+}
+
+.planos-carrossel__track {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  animation: scrollPlanos 15s linear infinite;
+  padding-inline: 2rem;
+  width: max-content;
+}
+
+.planos-carrossel:hover .planos-carrossel__track {
+  animation-play-state: paused;
+}
+
+.planos-carrossel__item {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.planos-carrossel__item img {
+  max-height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
+.planos-carrossel__item.text-logo {
+  font-family: var(--fonte-display);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--texto-suave);
+}
+
+@keyframes scrollPlanos {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-50% - 2rem)); } 
+}
+
+.btn-convenios__divisor {
+  width: 1.5px;
+  height: 28px;
+  background-color: var(--borda);
+  margin-inline: 1.5rem;
+}
 .aviso-convenios {
   margin-top: 2rem;
   background: var(--lilas);
@@ -911,10 +1086,10 @@ textarea:focus-visible {
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; 
   }
-  .reveal, .procedure-card__trigger, .atuacao__item img, .carrossel__track, .modal, .modal__panel, .btn {
+  .reveal, .reveal-left, .procedure-card__trigger, .atuacao__item img, .carrossel__track, .modal, .modal__panel, .btn {
     transition: none !important;
   }
-  .reveal { opacity: 1; transform: none; }
+  .reveal, .reveal-left { opacity: 1; transform: none; }
 }
 
 @media (min-width: 700px) {
