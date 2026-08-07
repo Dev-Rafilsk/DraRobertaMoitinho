@@ -8,7 +8,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,8 +17,11 @@
   <header class="header" id="header">
     <div class="container header__inner">
       <a href="#inicio" class="logo">
-        <span class="logo__marca">Dra. Roberta Moitinho</span>
-        <span class="logo__sub">Clínica da Dor</span>
+        <img src="logo-roberta.jpeg" alt="Logotipo da Dra. Roberta Moitinho" class="logo__img">
+        <div class="logo__text">
+          <span class="logo__marca">Dra. Roberta Moitinho</span>
+          <span class="logo__sub">Clínica da Dor</span>
+        </div>
       </a>
 
       <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="navMenu">
@@ -28,7 +30,7 @@
 
       <nav class="nav" id="navMenu">
         <ul class="nav__list">
-          <li><a href="#sobre" class="nav__link">Sobre Mim</a></li>
+          <li><a href="#sobre" class="nav__link">Me Conheça</a></li>
           <li><a href="#procedimentos" class="nav__link">Procedimentos</a></li>
           <li><a href="#locais" class="nav__link">Locais</a></li>
           <li><a href="#depoimentos" class="nav__link">Depoimentos</a></li>
@@ -43,11 +45,10 @@
 
     <section class="hero" id="inicio">
       <div class="container hero__inner">
-
         <div class="hero__text reveal">
           <p class="eyebrow"><span class="ponto" aria-hidden="true"></span>Dor - Ortopedia - Traumatologia - Acupuntura</p>
           <h1 class="hero__title">Cuidado que escuta a dor <span>antes de tratá-la.</span></h1>
-          <p class="hero__lead">Eu me chamo Roberta Moitinho e uno a precisão das técnicas integrativas para devolver movimento e qualidade de vida, com acolhimento em cada consulta.</p>
+          <p class="hero__lead">Me chamo Roberta Moitinho e uno a precisão com as técnicas integrativas mais modernas para devolver movimento e qualidade de vida, com acolhimento em cada consulta.</p>
 
           <div class="hero__actions">
             <a href="#contato" class="btn btn--primary">Agendar consulta</a>
@@ -55,34 +56,32 @@
           </div>
 
           <ul class="hero__credentials">
-            <li>CRM 14622</li>
-            <li>RQE Ortopedia 12328</li>
-            <li>RQE Dor 15647</li>
-            <li>RQE Acupuntura 17681</li>
+            <li>CRM: 14622</li>
+            <li>RQE: Ortopedia 12328</li>
+            <li>RQE: Dor 15647</li>
+            <li>RQE: Acupuntura 17681</li>
           </ul>
         </div>
 
         <div class="hero__figure reveal">
           <div class="hero__figure-glow" aria-hidden="true"></div>
-          <img src="dra-roberta-hero.jpg" alt="Dra. Roberta Leal sorridente, sentada à mesa de seu consultório com jaleco azul-marinho" class="hero__img">
+          <img src="roberta-consultorio.jpeg" alt="Dra. Roberta Leal sorridente, sentada à mesa de seu consultório com jaleco azul-marinho" class="hero__img">
         </div>
-
       </div>
     </section>
 
     <section class="sobre" id="sobre">
       <div class="container sobre__inner">
-
         <div class="sobre__figure reveal">
-          <img src="dra-roberta-sobre.jpg" alt="Dra. Roberta Leal sorrindo durante a realização de um procedimento guiado" class="sobre__img">
+          <img src="roberta-consultorio2.jpeg" alt="Dra. Roberta Leal sorridente em seu consultório, atenta ao atendimento" class="sobre__img">
         </div>
 
         <div class="sobre__text reveal">
-          <p class="eyebrow"><span class="ponto" aria-hidden="true"></span>Sobre a especialista</p>
-          <h2 class="section-title">Roberta Moitinho </h2>
+          <p class="eyebrow"><span class="ponto" aria-hidden="true"></span>Sobre sua médica</p>
+          <h2 class="section-title">Roberta Moitinho</h2>
           <p class="sobre__cargo">Médica Ortopedista e Traumatologista · Especialista em Dor e Acupuntura</p>
           <p>Formada em Medicina e especializada em Ortopedia e Traumatologia, a Dra. Roberta dedica sua prática ao tratamento da dor sob um olhar amplo — unindo procedimentos ortopédicos convencionais a técnicas integrativas como acupuntura, auriculoterapia e agulhamento a seco.</p>
-          <p>Seu trabalho parte de um princípio complexos e entender a origem da dor para cuidar da causa, não apenas do sintoma, em consultas pensadas para acolher cada paciente com atenção e clareza.</p>
+          <p>Seu trabalho parte do princípio de entender a origem da dor para cuidar da causa, não apenas do sintoma, em consultas pensadas para acolher cada paciente com atenção e clareza.</p>
 
           <dl class="sobre__creds">
             <div><dt>CRM</dt><dd>14622</dd></div>
@@ -91,7 +90,6 @@
             <div><dt>Acupuntura</dt><dd>RQE 17681</dd></div>
           </dl>
         </div>
-
       </div>
     </section>
 
@@ -101,36 +99,44 @@
         <h2 class="section-title">Uma rotina dedicada ao alívio da dor</h2>
 
         <div class="atuacao__grid">
-          <figure class="atuacao__item reveal">
-            <img src="dra-roberta-consultorio.jpg" alt="Dra. Roberta em seu consultório, trabalhando ao computador">
+          <figure class="atuacao__item reveal-left">
+            <img src="roberta-consultorio4.jpeg" alt="Dra. Roberta em seu consultório, ambiente acolhedor para consulta">
+            <figcaption>Prescrições</figcaption>
+          </figure>
+          <figure class="atuacao__item reveal-left">
+            <img src="roberta-usg.jpeg" alt="Procedimento guiado por ultrassonografia">
+            <figcaption>Procedimento guiado por ultrassom</figcaption>
+          </figure>
+          <figure class="atuacao__item reveal-left">
+            <img src="roberta-ac.jpeg" alt="Sessão de acupuntura">
+            <figcaption>Sessão de acupuntura</figcaption>
+          </figure>
+          <figure class="atuacao__item reveal-left">
+            <img src="roberta-consultorio.jpeg" alt="Dra. Roberta sorridente durante atendimento no consultório">
+            <figcaption>Atendimento personalizado</figcaption>
+          </figure>
+          <figure class="atuacao__item reveal-left">
+            <img src="roberta-bloque.jpeg" alt="Preparo de bloqueio anestésico">
+            <figcaption>Bloqueio anestésico</figcaption>
+          </figure>
+          <figure class="atuacao__item reveal-left">
+            <img src="roberta-consultorio2.jpeg" alt="Dra. Roberta em seu consultório, atenta ao atendimento">
             <figcaption>Consultório</figcaption>
-          </figure>
-          <figure class="atuacao__item reveal">
-            <img src="dra-roberta-ultrassom.jpg" alt="Procedimento guiado por ultrassonografia sendo realizado pela Dra. Roberta">
-            <figcaption>Procedimentos guiados por imagem</figcaption>
-          </figure>
-          <figure class="atuacao__item reveal">
-            <img src="dra-roberta-acupuntura.jpg" alt="Sessão de acupuntura e agulhamento conduzida pela Dra. Roberta">
-            <figcaption>Acupuntura &amp; agulhamento</figcaption>
           </figure>
         </div>
       </div>
     </section>
 
     <section class="procedimentos" id="procedimentos">
-      <div class="container">
-        <p class="eyebrow"><span class="ponto" aria-hidden="true"></span>Tratamentos</p>
+     <div class="container">
+       <p class="eyebrow"><span class="ponto" aria-hidden="true"></span>Tratamentos</p>
         <h2 class="section-title">Procedimentos e terapias</h2>
         <p class="procedimentos__intro">Clique em um procedimento para saber mais.</p>
 
         <ul class="procedimentos__grid">
-
           <li>
             <article class="procedure-card">
-              <button type="button" class="procedure-card__trigger"
-                data-procedure-tag="Bloqueio"
-                data-procedure-title="Bloqueios anestésicos locais"
-                data-procedure-teaser="Este procedimento consiste na injeção cuidadosa de medicamentos anestésicos em regiões específicas do corpo para interromper os sinais de dor. É um método seguro e eficaz para o alívio rápido e direcionado de dores agudas ou crônicas, proporcionando conforto e permitindo que o paciente avance em seu processo de reabilitação.">
+              <button type="button" class="procedure-card__trigger" data-procedure-tag="Bloqueio" data-procedure-title="Bloqueios anestésicos locais" data-procedure-teaser="Este procedimento consiste na injeção cuidadosa de medicamentos anestésicos em regiões específicas do corpo para interromper os sinais de dor. É um método seguro e eficaz para o alívio rápido e direcionado de dores agudas ou crônicas, proporcionando conforto e permitindo que o paciente avance em seu processo de reabilitação.">
                 <span class="procedure-card__tag procedure-card__tag--bloqueio">Bloqueio</span>
                 <span class="procedure-card__title">Bloqueios anestésicos locais</span>
                 <span class="procedure-card__teaser">Interrupção temporária e localizada da dor, aplicada em pontos específicos do corpo.</span>
@@ -138,13 +144,9 @@
               </button>
             </article>
           </li>
-
           <li>
             <article class="procedure-card">
-              <button type="button" class="procedure-card__trigger"
-                data-procedure-tag="Bloqueio"
-                data-procedure-title="Bloqueios anestésicos venosos"
-                data-procedure-teaser="Uma técnica especializada onde a medicação analgésica é administrada diretamente na veia de um membro isolado temporariamente. É um procedimento indicado para o controle de síndromes dolorosas mais complexas e dores de difícil manejo, bloqueando a resposta de dor de forma regional e eficiente.">
+              <button type="button" class="procedure-card__trigger" data-procedure-tag="Bloqueio" data-procedure-title="Bloqueios anestésicos venosos" data-procedure-teaser="Técnica especializada em que a medicação analgésica é administrada diretamente na veia de um membro isolado temporariamente. É um procedimento indicado para o controle de síndromes dolorosas mais complexas e dores de difícil manejo, bloqueando a resposta de dor de forma regional e eficiente.">
                 <span class="procedure-card__tag procedure-card__tag--bloqueio">Bloqueio</span>
                 <span class="procedure-card__title">Bloqueios anestésicos venosos</span>
                 <span class="procedure-card__teaser">Técnica realizada por via venosa para o manejo de quadros dolorosos específicos.</span>
@@ -152,13 +154,9 @@
               </button>
             </article>
           </li>
-
           <li>
             <article class="procedure-card">
-              <button type="button" class="procedure-card__trigger"
-                data-procedure-tag="Prescrição"
-                data-procedure-title="Prescrição de cannabis"
-                data-procedure-teaser="Trata-se de uma avaliação médica detalhada para o uso terapêutico de compostos derivados da cannabis (como o CBD). O tratamento é altamente individualizado, focado na melhora da qualidade de vida e no manejo de dores crônicas, sendo realizado com acompanhamento contínuo e em total conformidade com a legislação brasileira vigente.">
+              <button type="button" class="procedure-card__trigger" data-procedure-tag="Prescrição" data-procedure-title="Prescrição de cannabis" data-procedure-teaser="Trata-se de uma avaliação médica detalhada para o uso terapêutico de compostos derivados da cannabis (como o CBD). O tratamento é altamente individualizado, focado na melhora da qualidade de vida e no manejo de dores crônicas, sendo realizado com acompanhamento contínuo e em total conformidade com a legislação brasileira vigente.">
                 <span class="procedure-card__tag procedure-card__tag--prescricao">Prescrição</span>
                 <span class="procedure-card__title">Prescrição de cannabis</span>
                 <span class="procedure-card__teaser">Avaliação e acompanhamento para uso terapêutico de derivados de cannabis, conforme legislação vigente.</span>
@@ -166,13 +164,19 @@
               </button>
             </article>
           </li>
-
           <li>
             <article class="procedure-card">
-              <button type="button" class="procedure-card__trigger"
-                data-procedure-tag="Terapia integrativa"
-                data-procedure-title="Acupuntura"
-                data-procedure-teaser="Terapia reconhecida da Medicina Tradicional Chinesa que utiliza agulhas extremamente finas em pontos estratégicos do corpo. O objetivo é estimular o sistema nervoso a liberar substâncias analgésicas naturais, promover o relaxamento muscular profundo, diminuir o estresse e restaurar o equilíbrio do organismo para um alívio duradouro da dor.">
+              <button type="button" class="procedure-card__trigger" data-procedure-tag="Tecnologia" data-procedure-title="Terapia por Ondas de Choque" data-procedure-teaser="Terapia não invasiva que utiliza ondas acústicas para acelerar a regeneração tecidual e aliviar dores crônicas.">
+                <span class="procedure-card__tag procedure-card__tag--tecnologia">Tecnologia</span>
+                <span class="procedure-card__title">Terapia por Ondas de Choque</span>
+                <span class="procedure-card__teaser">Terapia com ondas acústicas para acelerar a cicatrização e tratar dores musculoesqueléticas.</span>
+                <span class="procedure-card__link">Saiba mais →</span>
+              </button>
+            </article>
+          </li>
+          <li>
+            <article class="procedure-card">
+              <button type="button" class="procedure-card__trigger" data-procedure-tag="Terapia integrativa" data-procedure-title="Acupuntura" data-procedure-teaser="Terapia reconhecida pela Medicina Tradicional Chinesa que utiliza agulhas extremamente finas em pontos estratégicos do corpo. O objetivo é estimular o sistema nervoso a liberar substâncias analgésicas naturais, promover o relaxamento muscular profundo, diminuir o estresse e restaurar o equilíbrio do organismo para um alívio duradouro da dor.">
                 <span class="procedure-card__tag procedure-card__tag--terapia">Terapia integrativa</span>
                 <span class="procedure-card__title">Acupuntura</span>
                 <span class="procedure-card__teaser">Técnica milenar que utiliza agulhas finas em pontos específicos para equilíbrio e alívio da dor.</span>
@@ -180,13 +184,9 @@
               </button>
             </article>
           </li>
-
           <li>
             <article class="procedure-card">
-              <button type="button" class="procedure-card__trigger"
-                data-procedure-tag="Terapia integrativa"
-                data-procedure-title="Agulhamento a seco"
-                data-procedure-teaser="Procedimento focado no alívio de tensões musculares. Utiliza agulhas finas que são inseridas diretamente nos pontos-gatilho que são nódulos de tensão no músculo. Como o nome sugere, não há injeção de medicamentos, o próprio estímulo mecânico da agulha desativa a contratura, relaxando a musculatura e aliviando a dor local.">
+              <button type="button" class="procedure-card__trigger" data-procedure-tag="Terapia integrativa" data-procedure-title="Agulhamento a seco" data-procedure-teaser="Procedimento focado no alívio de tensões musculares. Utiliza agulhas finas que são inseridas diretamente nos pontos-gatilho (nódulos de tensão no músculo). Como o nome sugere, não há injeção de medicamentos: o próprio estímulo mecânico da agulha desativa a contratura, relaxando a musculatura e aliviando a dor local.">
                 <span class="procedure-card__tag procedure-card__tag--terapia">Terapia integrativa</span>
                 <span class="procedure-card__title">Agulhamento a seco</span>
                 <span class="procedure-card__teaser">Estímulo de pontos-gatilho musculares com agulhas finas, sem infusão de substâncias.</span>
@@ -194,13 +194,9 @@
               </button>
             </article>
           </li>
-
           <li>
             <article class="procedure-card">
-              <button type="button" class="procedure-card__trigger"
-                data-procedure-tag="Terapia integrativa"
-                data-procedure-title="Auriculoterapia"
-                data-procedure-teaser="Uma técnica que se concentra na orelha, utilizando sementes ou pequenas esferas para estimular pontos reflexos que correspondem a diferentes partes do corpo. É uma excelente terapia complementar, não invasiva, amplamente utilizada para auxiliar no controle da dor, redução da ansiedade e regulação do sono.">
+              <button type="button" class="procedure-card__trigger" data-procedure-tag="Terapia integrativa" data-procedure-title="Auriculoterapia" data-procedure-teaser="Uma técnica que se concentra no pavilhão da orelha, utilizando sementes ou pequenas esferas para estimular pontos reflexos que correspondem a diferentes partes do corpo. É uma excelente terapia complementar, não invasiva, amplamente utilizada para auxiliar no controle da dor, redução da ansiedade e regulação do sono.">
                 <span class="procedure-card__tag procedure-card__tag--terapia">Terapia integrativa</span>
                 <span class="procedure-card__title">Auriculoterapia</span>
                 <span class="procedure-card__teaser">Estimulação de pontos reflexos localizados na orelha, usada como terapia complementar.</span>
@@ -208,27 +204,9 @@
               </button>
             </article>
           </li>
-
           <li>
             <article class="procedure-card">
-              <button type="button" class="procedure-card__trigger"
-                data-procedure-tag="Terapia integrativa"
-                data-procedure-title="Terapia com Ondas de Choque"
-                data-procedure-teaser="A terapia de ondas de choque é um tratamento não invasivo que usa ondas acústicas de alta energia para estimular a cicatrização de tecidos. Usando um aplicador que transmite pulsos de pressão através da pele até a região afetada. Essas ondas geram microtraumas controlados que estimulam neovascularização, liberação de fatores de crescimento e processos de regeneração tecidual.">
-                <span class="procedure-card__tag procedure-card__tag--terapia">Terapia integrativa</span>
-                <span class="procedure-card__title">Ondas de Choque</span>
-                <span class="procedure-card__teaser">Ondas de Choque para regeneração celular.</span>
-                <span class="procedure-card__link">Saiba mais →</span>
-              </button>
-            </article>
-           </li>
-
-          <li>
-            <article class="procedure-card">
-              <button type="button" class="procedure-card__trigger"
-                data-procedure-tag="Terapia integrativa"
-                data-procedure-title="Ventosaterapia"
-                data-procedure-teaser="Tratamento terapêutico que utiliza copos de acrílico ou vidro para criar um efeito de sucção na pele. Essa pressão negativa melhora significativamente a circulação sanguínea na região, ajuda a liberar a tensão da fáscia, reduz processos inflamatórios e promove um grande alívio em áreas de rigidez muscular.">
+              <button type="button" class="procedure-card__trigger" data-procedure-tag="Terapia integrativa" data-procedure-title="Ventosaterapia" data-procedure-teaser="Tratamento terapêutico que utiliza copos de acrílico ou vidro para criar um efeito de sucção na pele. Essa pressão negativa melhora significativamente a circulação sanguínea na região, ajuda a liberar a tensão da fáscia (tecido que envolve o músculo), reduz processos inflamatórios e promove um grande alívio em áreas de rigidez muscular.">
                 <span class="procedure-card__tag procedure-card__tag--terapia">Terapia integrativa</span>
                 <span class="procedure-card__title">Ventosaterapia</span>
                 <span class="procedure-card__teaser">Uso de ventosas para estimular a circulação local e o relaxamento muscular.</span>
@@ -236,13 +214,9 @@
               </button>
             </article>
           </li>
-
           <li>
             <article class="procedure-card">
-              <button type="button" class="procedure-card__trigger"
-                data-procedure-tag="Infiltração"
-                data-procedure-title="Infiltração articular com corticoide"
-                data-procedure-teaser="Consiste na aplicação de uma medicação anti-inflamatória potente diretamente dentro de uma articulação dolorida (como joelho ou ombro). É um procedimento rápido que age diretamente no foco do problema, visando reduzir drasticamente o inchaço e a inflamação severa, devolvendo o conforto ao paciente.">
+              <button type="button" class="procedure-card__trigger" data-procedure-tag="Infiltração" data-procedure-title="Infiltração articular com corticoide" data-procedure-teaser="Consiste na aplicação de uma medicação anti-inflamatória potente diretamente dentro de uma articulação dolorida (como joelho ou ombro). É um procedimento rápido que age diretamente no foco do problema, visando reduzir drasticamente o inchaço e a inflamação severa, devolvendo o conforto ao paciente.">
                 <span class="procedure-card__tag procedure-card__tag--infiltracao">Infiltração</span>
                 <span class="procedure-card__title">Infiltração articular com corticoide</span>
                 <span class="procedure-card__teaser">Aplicação de corticoide diretamente na articulação para reduzir processos inflamatórios.</span>
@@ -250,27 +224,19 @@
               </button>
             </article>
           </li>
-
           <li>
             <article class="procedure-card">
-              <button type="button" class="procedure-card__trigger"
-                data-procedure-tag="Infiltração"
-                data-procedure-title="Infiltração articular com ácido hialurônico"
-                data-procedure-teaser="Também conhecida como Viscosuplementação. O ácido hialurônico atua como um gel lubrificante e amortecedor natural quando injetado dentro da articulação. É altamente indicado para quadros de desgaste como a artrose, pois reduz o atrito entre os ossos, alivia a dor e melhora a mobilidade articular a médio e longo prazo.">
+              <button type="button" class="procedure-card__trigger" data-procedure-tag="Infiltração" data-procedure-title="Infiltração articular com ácido hialurônico" data-procedure-teaser="Também conhecida como Viscosuplementação. O ácido hialurônico atua como um gel lubrificante e amortecedor natural quando injetado dentro da articulação. É altamente indicado para quadros de desgaste (como a artrose), pois reduz o atrito entre os ossos, alivia a dor e melhora a mobilidade articular a médio e longo prazo.">
                 <span class="procedure-card__tag procedure-card__tag--infiltracao">Infiltração</span>
                 <span class="procedure-card__title">Infiltração articular com ácido hialurônico</span>
-                <span class="procedure-card__teaser">Aplicação intra-articular indicada para lubrificação e conforto da articulação.</span>
+                <span class="procedure-card__teaser">Também conhecida como Viscosuplementação. O ácido hialurônico atua como gel lubrificante.</span>
                 <span class="procedure-card__link">Saiba mais →</span>
               </button>
             </article>
           </li>
-
           <li>
             <article class="procedure-card">
-              <button type="button" class="procedure-card__trigger"
-                data-procedure-tag="Infiltração"
-                data-procedure-title="Infiltração tendinosa/fascial com ácido hialurônico"
-                data-procedure-teaser="Diferente da aplicação nas articulações, este procedimento direciona o ácido hialurônico para os tecidos ao redor de tendões lesionados ou fáscias (como na fascite plantar). Ele cria um ambiente mais favorável e hidratado, reduzindo o atrito durante o movimento e auxiliando ativamente no processo natural de cicatrização e reparação das fibras teciduais.">
+              <button type="button" class="procedure-card__trigger" data-procedure-tag="Infiltração" data-procedure-title="Infiltração tendinosa/fascial com ácido hialurônico" data-procedure-teaser="Diferente da aplicação nas articulações, este procedimento direciona o ácido hialurônico para os tecidos ao redor de tendões lesionados ou fáscias (como na fascite plantar). Ele cria um ambiente mais favorável e hidratado, reduzindo o atrito durante o movimento e auxiliando ativamente no processo natural de cicatrização e reparação das fibras teciduais.">
                 <span class="procedure-card__tag procedure-card__tag--infiltracao">Infiltração</span>
                 <span class="procedure-card__title">Infiltração tendinosa/fascial com ácido hialurônico</span>
                 <span class="procedure-card__teaser">Aplicação localizada em tendões ou fáscias para apoio à reparação tecidual.</span>
@@ -278,14 +244,13 @@
               </button>
             </article>
           </li>
-
         </ul>
       </div>
     </section>
 
     <section class="locais" id="locais">
       <div class="container">
-        <p class="eyebrow"><span class="ponto" aria-hidden="true"></span>Onde encontrar me encontrar</p>
+        <p class="eyebrow"><span class="ponto" aria-hidden="true"></span>Onde me encontrar</p>
         <h2 class="section-title">Locais de atendimento</h2>
 
         <div class="locais__grid">
@@ -293,65 +258,90 @@
           <article class="local-card reveal">
             <h3 class="local-card__nome">CTD — Clínica de Terapia da Dor</h3>
             <p class="local-card__unidade">Unidade Salvador Trade Center</p>
+
             <ul class="local-card__horarios">
-              <li><span>Segunda-feira</span>Manhã</li>
-              <li><span>Terça-feira</span>Manhã</li>
+              <li><span>Segunda-feira</span> Manhã</li>
+              <li><span>Terça-feira</span> Manhã</li>
             </ul>
-              <a href="https://wa.me/5571000000001" class="local-card__whats-icon" aria-label="Agendar via WhatsApp na Salva'dor" target="_blank" rel="noopener">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor">
-      <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157.1zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+
+            <div class="local-card__acoes">
+              <a href="https://www.google.com/maps/search/?api=1&query=Av.+Tancredo+Neves+1632+Salvador+Trade+Center+Torre+Sul+Salvador+BA" target="_blank" rel="noopener noreferrer" class="btn-circular btn-circular--maps" aria-label="Ver CTD no Google Maps" title="Ver no Mapa">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="currentColor" aria-hidden="true">
+                  <path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/>
                 </svg>
-              </a> 
+              </a>
+              <a href="https://wa.me/5571988023785" class="btn-circular btn-circular--wpp" aria-label="Agendar na CTD via WhatsApp" title="WhatsApp" target="_blank" rel="noopener">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true">
+                  <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157.1zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+                </svg>
+              </a>
+            </div>
           </article>
 
           <article class="local-card reveal">
             <h3 class="local-card__nome">Clínica Salva'dor</h3>
-            <p class="local-card__unidade">Unidade Garibaldi </p>
+            <p class="local-card__unidade">Unidade Garibaldi</p>
+
             <ul class="local-card__horarios">
-              <li><span>Segunda-feira</span>Tarde</li>
-              <li><span>Terça-feira</span>Tarde</li>
-              <li><span>Sexta-feira</span>Manhã</li>
-              <a href="https://wa.me/557132374001" class="local-card__whats-icon" aria-label="Agendar via WhatsApp na Salva'dor" target="_blank" rel="noopener">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor">
-      <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157.1zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
-               </svg>
-             </a> 
+              <li><span>Segunda-feira</span> Tarde</li>
+              <li><span>Terça-feira</span> Tarde</li>
+              <li><span>Sexta-feira</span> Manhã</li>
             </ul>
+
+            <div class="local-card__acoes">
+              <a href="https://share.google/thPK0sNj3OYtWkQBv" target="_blank" rel="noopener noreferrer" class="btn-circular btn-circular--maps" aria-label="Ver Clínica Salva'dor no Google Maps" title="Ver no Mapa">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="currentColor" aria-hidden="true">
+                  <path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/>
+                </svg>
+              </a>
+              <a href="https://wa.me/557132374001" class="btn-circular btn-circular--wpp" aria-label="Agendar na Clínica Salva'dor via WhatsApp" title="WhatsApp" target="_blank" rel="noopener">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true">
+                  <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157.1zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+                </svg>
+              </a>
+            </div>
           </article>
 
           <article class="local-card reveal">
-            <h3 class="local-card__nome">Clínica VitaDor</h3>
+            <h3 class="local-card__nome">Clínica Vitador</h3>
             <p class="local-card__unidade">Unidade Pituba</p>
+
             <ul class="local-card__horarios">
-              <li><span>Quinta-feira</span>Manhã</li>
-               <a href="https://wa.me/5571" class="local-card__whats-icon" aria-label="Agendar via WhatsApp na Salva'dor" target="_blank" rel="noopener">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor">
-      <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157.1zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
-               </svg>
-             </a> 
+              <li><span>Quinta-feira</span> Tarde</li>
             </ul>
+
+            <div class="local-card__acoes">
+              <a href="https://maps.app.goo.gl/6bdJ2iG9cdo5NBY9A" target="_blank" rel="noopener noreferrer" class="btn-circular btn-circular--maps" aria-label="Ver Clínica Vitador no Google Maps" title="Ver no Mapa">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="currentColor" aria-hidden="true">
+                  <path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/>
+                </svg>
+              </a>
+              <a href="https://wa.me/557130522533" class="btn-circular btn-circular--wpp" aria-label="Agendar na Clínica Vitador via WhatsApp" title="WhatsApp" target="_blank" rel="noopener">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true">
+                  <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157.1zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+                </svg>
+              </a>
+            </div>
           </article>
-
         </div>
 
-         <div class="convenios-destaque reveal">
-          <p class="convenios-destaque__texto">Atendemos pelos planos:</p>
-          <a href="https://wa.me/557132374001?text=Olá! Gostaria de saber mais sobre o atendimento pelo meu plano de saúde." class="btn-convenios" target="_blank" rel="noopener">
-            
-            <div class="btn-convenios__logo">
-              <img src="bradesco-logo.svg" alt="Bradesco Saúde">
+        <div class="convenios-destaque reveal">
+          <p class="convenios-destaque__texto">Principais Planos</p>
+          <div class="planos-carrossel">
+            <div class="planos-carrossel__track">
+              <div class="planos-carrossel__item"><img src="logo-bradesco.png" alt="Bradesco Saúde"></div>
+              <div class="planos-carrossel__item"><img src="logo-sulame.png" alt="SulAmérica"></div>
+              <div class="planos-carrossel__item"><img src="logo-medservice.png" alt="MedService"></div>
+              <div class="planos-carrossel__item"><img src="logo-petrobras.png" alt="Petrobras"></div>
+              <div class="planos-carrossel__item"><img src="logo-trt5.png" alt="TRT5"></div>
+              <div class="planos-carrossel__item"><img src="logo-bradesco.png" alt="Bradesco Saúde"></div>
+              <div class="planos-carrossel__item"><img src="logo-sulame.png" alt="SulAmérica"></div>
+              <div class="planos-carrossel__item"><img src="logo-medservice.png" alt="MedService"></div>
+              <div class="planos-carrossel__item"><img src="logo-petrobras.png" alt="Petrobras"></div>
+              <div class="planos-carrossel__item"><img src="logo-trt5.png" alt="TRT5"></div>
             </div>
-
-            <div class="btn-convenios__divisor" aria-hidden="true"></div>
-
-            <div class="btn-convenios__logo">
-              <img src="sulamerica-logo.svg" alt="SulAmérica">
-            </div>
-
-          </a>
+          </div>
         </div>
-
-        <div class="aviso-convenios reveal">
 
         <div class="aviso-convenios reveal">
           <strong>Sobre os convênios aceitos:</strong> pedimos que verifique diretamente nos sites de cada clínica, pois os credenciamentos são dinâmicos e atualizados com frequência.
@@ -369,7 +359,6 @@
 
           <div class="carrossel__viewport">
             <ul class="carrossel__track" id="carrosselTrack">
-
               <li class="depoimento-card">
                 <div class="depoimento-card__estrelas" aria-label="5 de 5 estrelas">
                   <span class="estrela cheia">★</span><span class="estrela cheia">★</span><span class="estrela cheia">★</span><span class="estrela cheia">★</span><span class="estrela cheia">★</span>
@@ -377,7 +366,6 @@
                 <p class="depoimento-card__texto">"A Dra. Roberta ouviu cada detalhe da minha dor antes de propor qualquer tratamento. Me senti verdadeiramente cuidada."</p>
                 <p class="depoimento-card__nome">Marina S.</p>
               </li>
-
               <li class="depoimento-card">
                 <div class="depoimento-card__estrelas" aria-label="5 de 5 estrelas">
                   <span class="estrela cheia">★</span><span class="estrela cheia">★</span><span class="estrela cheia">★</span><span class="estrela cheia">★</span><span class="estrela cheia">★</span>
@@ -385,7 +373,6 @@
                 <p class="depoimento-card__texto">"Fiz acupuntura pela primeira vez com ela, e o ambiente é tão acolhedor que qualquer receio desaparece."</p>
                 <p class="depoimento-card__nome">Carlos A.</p>
               </li>
-
               <li class="depoimento-card">
                 <div class="depoimento-card__estrelas" aria-label="4 de 5 estrelas">
                   <span class="estrela cheia">★</span><span class="estrela cheia">★</span><span class="estrela cheia">★</span><span class="estrela cheia">★</span><span class="estrela vazia">★</span>
@@ -393,7 +380,6 @@
                 <p class="depoimento-card__texto">"Explicação clara sobre cada etapa do procedimento. Profissionalismo do início ao fim."</p>
                 <p class="depoimento-card__nome">Juliana P.</p>
               </li>
-
               <li class="depoimento-card">
                 <div class="depoimento-card__estrelas" aria-label="5 de 5 estrelas">
                   <span class="estrela cheia">★</span><span class="estrela cheia">★</span><span class="estrela cheia">★</span><span class="estrela cheia">★</span><span class="estrela cheia">★</span>
@@ -401,7 +387,6 @@
                 <p class="depoimento-card__texto">"Depois de tentar vários caminhos, finalmente encontrei uma abordagem que fez sentido para o meu caso."</p>
                 <p class="depoimento-card__nome">Eduardo M.</p>
               </li>
-
               <li class="depoimento-card">
                 <div class="depoimento-card__estrelas" aria-label="5 de 5 estrelas">
                   <span class="estrela cheia">★</span><span class="estrela cheia">★</span><span class="estrela cheia">★</span><span class="estrela cheia">★</span><span class="estrela cheia">★</span>
@@ -409,7 +394,6 @@
                 <p class="depoimento-card__texto">"Atendimento humano, atencioso e no horário combinado. Recomendo de olhos fechados."</p>
                 <p class="depoimento-card__nome">Beatriz R.</p>
               </li>
-
             </ul>
           </div>
 
@@ -421,7 +405,6 @@
         <div class="avaliacao-form-wrap reveal">
           <h3 class="avaliacao-form-wrap__titulo">Deixe seu depoimento</h3>
           <form class="avaliacao-form" id="avaliacaoForm" novalidate>
-
             <label class="avaliacao-form__campo">
               Nome
               <input type="text" name="nome" id="avaliacaoNome" required placeholder="Como você gostaria de ser identificado(a)">
@@ -448,7 +431,6 @@
             <p class="avaliacao-form__feedback" id="avaliacaoFeedback" role="status" aria-live="polite"></p>
           </form>
         </div>
-
       </div>
     </section>
 
@@ -457,8 +439,8 @@
         <h2 class="section-title contato__title">Vamos cuidar da sua dor juntos?</h2>
         <p class="contato__texto">Fale com a equipe da Dra. Roberta e agende sua consulta na unidade mais próxima de você.</p>
         <div class="contato__actions">
-          <a href="https://wa.me/5571000000000" class="btn btn--primary" target="_blank" rel="noopener">WhatsApp</a>
-          <a href="mailto:contato@drarobertaleal.com.br" class="btn btn--ghost">Enviar e-mail</a>
+          <a href="https://wa.me/557132374001" class="btn btn--primary" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="mailto:robertamoitinho@gmail.com" class="btn btn--ghost">Enviar e-mail</a>
         </div>
       </div>
     </section>
@@ -479,8 +461,7 @@
       </nav>
       <p class="footer__redes"></p>
     </div>
-    <p class="footer__copy">© 2026 Dra. Roberta Moitinho.
-      Todos os direitos reservados. · <br>Desenvolvido por &lt;Dev&gt;Rafilsk</p>
+    <p class="footer__copy">© 2026 Dra. Roberta Moitinho. Todos os direitos reservados.<br> <strong>Desenvolvido por &lt;Dev&gt;Rafilsk</strong></p>
   </footer>
 
   <div class="modal" id="procedureModal" aria-hidden="true">
@@ -498,5 +479,15 @@
   </div>
 
   <script src="script.js"></script>
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
 </body>
 </html>
