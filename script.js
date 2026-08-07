@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function () {
 
   const navToggle = document.getElementById('navToggle');
@@ -26,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
   atualizarCabecalho();
   window.addEventListener('scroll', atualizarCabecalho, { passive: true });
 
-  const elementosRevelados = document.querySelectorAll('.reveal');
+  const elementosRevelados = document.querySelectorAll('.reveal, .reveal-left');
 
   if ('IntersectionObserver' in window) {
     const observador = new IntersectionObserver(function (entradas, obs) {
@@ -47,6 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const modalTag = document.getElementById('modalTag');
   const modalTitle = document.getElementById('modalTitle');
   const modalTeaser = document.getElementById('modalTeaser');
+  const modalDescription = modal.querySelector('.modal__placeholder p');
   const modalPanel = modal.querySelector('.modal__panel');
   const gatilhosProcedimento = document.querySelectorAll('.procedure-card__trigger');
 
@@ -58,6 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
     modalTag.textContent = dados.tag;
     modalTitle.textContent = dados.title;
     modalTeaser.textContent = dados.teaser;
+    modalDescription.textContent = dados.description;
 
     modal.classList.add('is-open');
     modal.setAttribute('aria-hidden', 'false');
@@ -78,7 +79,8 @@ document.addEventListener('DOMContentLoaded', function () {
       abrirModal({
         tag: botao.dataset.procedureTag,
         title: botao.dataset.procedureTitle,
-        teaser: botao.dataset.procedureTeaser
+        teaser: botao.dataset.procedureTeaser,
+        description: botao.dataset.procedureDescription
       });
     });
   });
