@@ -231,7 +231,7 @@ button {
   font-size: 0.68rem; 
   letter-spacing: 0.08em; 
   text-transform: uppercase; 
-  color: var(--texto-suave); 
+  color: var(--roxo); 
 }
 
 .nav-toggle {
