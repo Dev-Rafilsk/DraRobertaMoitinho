@@ -457,7 +457,7 @@ button {
   box-shadow: var(--sombra);
 }
 .atuacao__item img { 
-  aspect-ratio: 4/5; 
+  aspect-ratio: 4/6; 
   object-fit: cover; 
   transition: transform 0.6s ease; 
 }
