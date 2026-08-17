@@ -518,6 +518,42 @@ button {
   box-shadow: var(--sombra);
   border-color: var(--roxo-suave);
 }
+.procedure-card__trigger--destaque {
+  background: rgba(250, 244, 252, 0.75); 
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 2px solid var(--amarelo);
+  box-shadow: 0 16px 40px -10px rgba(107, 45, 140, 0.25);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.procedure-card__trigger--destaque::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0) 65%);
+  transform: rotate(45deg);
+  pointer-events: none;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.procedure-card__trigger--destaque .procedure-card__title {
+  color: var(--roxo);
+  font-size: 1.25rem;
+}
+
+.procedure-card__trigger--destaque:hover,
+.procedure-card__trigger--destaque:focus-visible {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 45px -10px rgba(107, 45, 140, 0.35);
+  border-color: var(--roxo);
+}
 
 .procedure-card__tag {
   align-self: flex-start;
