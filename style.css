@@ -673,6 +673,7 @@ button {
 }
 
 .modal__placeholder {
+  display: none;
   border: 1.5px dashed var(--roxo-suave);
   border-radius: var(--raio-pequeno);
   padding: 1.2rem;
