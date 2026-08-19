@@ -373,7 +373,8 @@ button {
 
 .hero__figure { 
   position: relative; 
-  justify-self: center; 
+  justify-self: center;
+  order: -1;
 }
 
 .hero__figure-glow {
@@ -1229,12 +1230,15 @@ textarea:focus-visible {
   }
 
   .hero__inner { 
-    grid-template-columns: 1.1fr 0.9fr; 
+    grid-template-columns: 0.9fr 1.1fr; 
     align-items: center; 
     gap: 4rem; 
   }
   .hero__figure { 
-    order: 2; 
+    order: 1; 
+  }
+  .hero__text {
+    order: 2;
   }
 
   .sobre__inner { 
