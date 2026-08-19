@@ -437,6 +437,66 @@ button {
   font-weight: 700; 
   color: var(--vinho); 
 }
+.sobre__glass-card {
+  background: rgba(231, 214, 239, 0.35); 
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-left: 4px solid var(--amarelo);
+  border-radius: var(--raio);
+  padding: 2rem;
+  margin-top: 2rem;
+  box-shadow: 0 12px 32px 0 rgba(61, 16, 35, 0.15); 
+  position: relative;
+  overflow: hidden;
+}
+.sobre__glass-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0) 100%);
+  transform: skewX(-25deg);
+  animation: reflexoVidro 4s infinite;
+}
+@keyframes reflexoVidro {
+  0% { left: -100%; }
+  15% { left: 200%; }
+  100% { left: 200%; }
+}
+.sobre__glass-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--roxo), var(--vinho));
+  color: var(--branco);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  margin-bottom: 1.2rem;
+}
+.sobre__glass-title {
+  font-family: var(--fonte-display);
+  color: var(--vinho-profundo);
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+}
+.sobre__glass-card p {
+  color: var(--texto);
+  font-size: 0.95rem;
+  margin-bottom: 0.8rem;
+}
+.sobre__glass-idiomas {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1.2rem;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--roxo);
+}
 
 .atuacao { 
   padding-block: 5.5rem; 
